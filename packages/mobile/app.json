@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Nikolos Ceramic",
+    "slug": "nikolos-ceramic",
+    "version": "1.0.0",
+    "scheme": "nikolos",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#F5EFE6"
+    },
+    "ios": {
+      "bundleIdentifier": "com.nikolosceramics_k7m2.runable",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.nikolosceramics_k7m2.runable",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#F5EFE6"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "extra": {
+      "apiUrl": "https://flnn18fvujafwld4f6uuy-preview-4200.runable.site/"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ]
+  }
+}
