@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nikelos-ceramic
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: "npm install -g bun@latest && bun install --frozen-lockfile && bun run --cwd packages/web build"
+    startCommand: "bun packages/web/src/server.ts"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
